@@ -24,7 +24,7 @@ func main() {
 		for {
 			time.Sleep(time.Second)
 
-			fmt.Println(config.Get("key", "subkey").String(""))
+			fmt.Println("config value:", config.Get("key", "subkey").String(""))
 
 		}
 	}()
